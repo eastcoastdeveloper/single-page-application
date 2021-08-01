@@ -1,0 +1,146 @@
+[
+    {
+        "img": "https://assets.codepen.io/1470716/vikingOne.jpg",
+        "headline": "Southern Mediterranean Discovery",
+        "destination": "Rome To Barcelona",
+        "days": "8",
+        "guidedTours": "6",
+        "countries": "4",
+        "from": "$1,999"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingTwo.jpg",
+        "headline": "Cities of Antiquity & the Holy Land",
+        "destination": "Rome To Athens",
+        "days": "15",
+        "guidedTours": "9",
+        "countries": "4",
+        "from": "$3,099"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingThree.jpg",
+        "headline": "Iconic Western Mediterranean",
+        "destination": "Barcelona To Rome",
+        "days": "8",
+        "guidedTours": "5",
+        "countries": "4",
+        "from": "$1,999"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingFour.jpg",
+        "headline": "Mediterranean Odyssey",
+        "destination": "Barcelona To Venice",
+        "days": "13",
+        "guidedTours": "10",
+        "countries": "6",
+        "from": "$4,699"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingFive.jpg",
+        "headline": "Empires of the Mediterranean",
+        "destination": "Venice To Athens",
+        "days": "10",
+        "guidedTours": "7",
+        "countries": "5",
+        "from": "$4,499"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingSix.jpg",
+        "headline": "Italian Sojourn",
+        "destination": "Rome To Venice",
+        "days": "8",
+        "guidedTours": "7",
+        "countries": "2",
+        "from": "$2,599"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingSeven.jpg",
+        "headline": "Into the Midnight Sun",
+        "destination": "Bergen To London",
+        "days": "15",
+        "guidedTours": "11",
+        "countries": "3",
+        "from": "$6,499"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingEight.jpg",
+        "headline": "Viking Homelands",
+        "destination": "Stockholm To Bergen",
+        "days": "15",
+        "guidedTours": "11",
+        "countries": "8",
+        "from": "$5,699"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingNine.jpg",
+        "headline": "Trade Routes of the Middle Ages",
+        "destination": "Bergen To Barcelona",
+        "days": "15",
+        "guidedTours": "10",
+        "countries": "7",
+        "from": "$4,699"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingTen.jpg",
+        "headline": "Mediterranean Explorations",
+        "destination": "Rome To Rome",
+        "days": "15",
+        "guidedTours": "11",
+        "countries": "6",
+        "from": "$3,798"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingEleven.jpg",
+        "headline": "Majestic Mediterranean",
+        "destination": "Barcelona To Barcelona",
+        "days": "15",
+        "guidedTours": "11",
+        "countries": "6",
+        "from": "$3,798"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingTwelve.jpg",
+        "headline": "In the Wake of the Vikings",
+        "destination": "Bergen To Montreal",
+        "days": "15",
+        "guidedTours": "7",
+        "countries": "6",
+        "from": "$6,999"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingThirteen.jpg",
+        "headline": "Easter Seaboard Explorer",
+        "destination": "Montreal To New York City",
+        "days": "13",
+        "guidedTours": "7",
+        "countries": "2",
+        "from": "$5,799"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingFourteen.jpg",
+        "headline": "Around the Caribbean Sea",
+        "destination": "New York City To Miami",
+        "days": "15",
+        "guidedTours": "7",
+        "countries": "8",
+        "from": "$3,299"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingFifteen.jpg",
+        "headline": "Cultural Cuba",
+        "destination": "Miami To Miami",
+        "days": "8",
+        "guidedTours": "4",
+        "countries": "2",
+        "from": "$2,649"
+    },
+    {
+        "img": "https://assets.codepen.io/1470716/vikingSixteen.jpg",
+        "headline": "Cuba, Panama & the Pacific",
+        "destination": "Miami To Los Angeles",
+        "days": "22",
+        "guidedTours": "11",
+        "countries": "8",
+        "from": "$6,299"
+    }
+]

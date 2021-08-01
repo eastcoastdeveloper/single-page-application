@@ -1,0 +1,184 @@
+<div class="pageContent">
+    <gallery ng-show="gallery"></gallery>
+    <div class="deckHolder">
+        <div class="deckSeven">
+            <div id="dkSevenOne" ng-click="myFunction($event)" data="0"></div>
+            <div id="dkSevenTwo" ng-click="myFunction($event)" data="1"></div>
+            <div id="dkSevenThree" ng-click="myFunction($event)" data="2"></div>
+            <div id="dkSevenFour" ng-click="myFunction($event)" data="3"></div>
+            <div id="dkSevenFive" ng-click="myFunction($event)" data="4"></div>
+            <div id="dkSevenSix" ng-click="myFunction($event)" data="5"></div>
+            <div id="dkSevenSeven" ng-click="myFunction($event)" data="6"></div>
+            <div id="dkSevenEight" ng-click="myFunction($event)" data="7"></div>
+            <div id="dkSevenNine" ng-click="myFunction($event)" data="8"></div>
+         </div>
+    </div>
+    <!-- SIDE BAR LAYOUT -->
+    <div ng-show="details" class="detailPanel">
+        <div class="navTabs">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                FEATURES
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div id="items"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2" data="2">
+                                OS
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" data="2">
+                        <div class="panel-body">
+                            {{ galleryContent[0] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse3" data="3">
+                                PS2
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" data="3">
+                        <div class="panel-body">
+                            {{ galleryContent[1] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse4" data="4">
+                                DV1
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse" data="4">
+                        <div class="panel-body">
+                            {{ galleryContent[2] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse5" data="5">
+                                Aquavit Terrace
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse" data="5">
+                        <div class="panel-body">
+                            {{ galleryContent[3] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse6" data="6">
+                                Infinity Pool
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse" data="6">
+                        <div class="panel-body">
+                            {{ galleryContent[4] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse7" data="7">
+                                Main Pool
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse" data="7">
+                        <div class="panel-body">
+                            {{ galleryContent[5] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse8" data="8">
+                                The Wintergarden
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse8" class="panel-collapse collapse" data="8">
+                        <div class="panel-body">
+                            {{ galleryContent[6] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse9" data="9">
+                                World Cafe
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse9" class="panel-collapse collapse" data="9">
+                        <div class="panel-body">
+                            {{ galleryContent[7] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse10" data="10">
+                                Explorer's Lounge
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse10" class="panel-collapse collapse" data="10">
+                        <div class="panel-body">
+                            {{ galleryContent[8] }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end accordion -->
+        </div>
+        <!-- end navTabs -->
+    </div>
+    <!-- end detailPanel -->
+    <h4 class="deckNum" ng-class="{'white' : details}">
+        {{ deckNum }}
+    </h4>
+    <p id="h5Btn" ng-class="{' white detailsBtn ' : details}" ng-click="detailsToggle(); features()" ng-bind="divText">
+        Details
+    </p>
+    <div class="interactiveSpace"></div>
+    <div class="touchPointHolder" ng-click="features()">
+        <span data="2" ng-click="captureClick($event)">OS</span>
+        <span data="3" ng-click="captureClick($event)">PS2</span>
+        <span data="4" ng-click="captureClick($event)">DV1</span>
+        <span data="5" ng-click="captureClick($event)">Aquavit Terrace</span>
+        <span data="6" ng-click="captureClick($event)">Infinity Pool</span>
+        <span data="7" ng-click="captureClick($event)">Main Pool</span>
+        <span data="8" ng-click="captureClick($event)">The Wintergarden</span>
+        <span data="9" ng-click="captureClick($event)">Wolrd Cafe</span>
+        <span data="10" ng-click="captureClick($event)">Explorers' Lounge</span>
+    </div>
+</div>

@@ -1,0 +1,2150 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+    display: none !important;
+}
+#error-message {
+    background-color: #2b3d52;
+    color: white;
+    font-size: 10pt;
+    padding: 5px 0;
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    -webkit-animation: showmessage 12s 3s;
+    animation: showmessage 12s 3s;
+}
+-webkit-@keyframes showmessage {
+    0%, 100% { bottom: -100px; }
+    5%, 95% { bottom: 0; }
+}
+@keyframes showmessage {
+    0%, 100% { bottom: -100px; }
+    5%, 95% { bottom: 0; }
+}
+#videoPlayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: #2b3d52;
+    padding-top: 30px;
+    left: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    top: 555px;
+}
+.videoBG {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+.youTubeVid {
+    border: 1px solid white;
+    height: 88%;
+    width: 73%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.showVideo {
+    margin: auto !important;
+    top: 0 !important;
+}
+.closeVid {
+    position: absolute;
+    top: 28px;
+    color: black;
+    background-color: #f5f5f5;
+    font-size: 12pt;
+    text-transform: uppercase;
+    right: 132px;
+    text-align: center;
+    z-index: 21;
+    font-size: 11pt;
+    border: none;
+    padding: 1px 10px;
+}
+.openVid {
+    top: 21px !important;
+}
+.homeMenu {
+    position: absolute;
+    z-index: 1;
+    left: 156px;
+    top: 26px;
+}
+.slideLeft.ng-leave {
+    -webkit-animation: slideOutLeft 0.5s both ease-out;
+    -moz-animation: slideOutLeft 0.5s both ease-out;
+    animation: slideOutLeft 0.5s both ease-out;
+}
+.slideLeft.ng-enter {
+    -webkit-animation: slideInRight 0.5s both ease-out;
+    -moz-animation: slideInRight 0.5s both ease-out;
+    animation: slideInRight 0.5s both ease-out;
+}
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-100%);
+    }
+}
+@-moz-keyframes slideOutLeft {
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@-moz-keyframes slideInRight {
+    from {
+        -moz-transform: translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+
+/* --------------------------------------------- */
+
+.slideRight.ng-leave {
+    -webkit-animation: slideOutRight 0.5s both ease-out;
+    -moz-animation: slideOutRight 0.5s both ease-out;
+    animation: slideOutRight 0.5s both ease-out;
+}
+.slideRight.ng-enter {
+    -webkit-animation: slideInLeft 0.5s both ease-out;
+    -moz-animation: slideInLeft 0.5s both ease-out;
+    animation: slideInLeft 0.5s both ease-out;
+}
+@keyframes slideOutRight {
+    to {
+        transform: translateX(100%);
+    }
+}
+@-moz-keyframes slideOutRight {
+    to {
+        -moz-transform: translateX(100%);
+    }
+}
+@-webkit-keyframes slideOutRight {
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@-moz-keyframes slideInLeft {
+    from {
+        -moz-transform: translateX(-100%);
+    }
+    to {
+        -moz-transform: translateX(0);
+    }
+}
+@-webkit-keyframes slideInLeft {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+a #left,
+a #right,
+a #up,
+a #down {
+    cursor: pointer;
+}
+#dkThreeOne,
+#dkThreeTwo,
+#dkThreeThree,
+#dkThreeFour,
+#dkThreeFive,
+#dkThreeSix,
+#dkFourOne,
+#dkFourThree,
+#dkFourFour,
+#dkFourFive,
+#dkFourSix,
+#dkFiveOne,
+#dkFiveTwo,
+#dkFiveThree,
+#dkFiveFour,
+#dkFiveFive,
+#dkFiveSix,
+#dkFiveSeven,
+#dkSixOne,
+#dkSixTwo,
+#dkSixThree,
+#dkSixFour,
+#dkSevenOne,
+#dkSevenTwo,
+#dkSevenThree,
+#dkSevenFour,
+#dkSevenFive,
+#dkSevenSix,
+#dkSevenSeven,
+#dkSevenEight,
+#dkSevenNine,
+#vikingBar,
+#theSpa,
+#vikingRoom,
+#theRestaurant,
+#theAtrium,
+#theater {
+    background-color: red;
+    opacity: 0.7;
+    border: 2px solid black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+button.learnMore,
+.btnsActive,
+.directive,
+.exploreHolder,
+.itineraries,
+.itineraries .prev,
+.stateroom .prev,
+.itineraries .next,
+.staterooms.next,
+.leftArrow,
+.leftArrowSM,
+.rightArrow,
+.rightArrowSM,
+.stateroom,
+.topTier,
+.discoverShip,
+.deckOne,
+.deckTwo,
+.deckThree,
+.deckFour,
+.deckFive,
+.deckSix,
+.deckSeven,
+.deckEight,
+.deckNine,
+.deckA,
+.showOnPortraitView,
+.interactiveSpace,
+#dkThreeOne,
+#dkThreeTwo,
+#dkThreeFour,
+#dkThreeThree,
+#dkThreeFive,
+#dkThreeSix,
+#dkFourOne,
+#dkFourThree,
+#dkFourFour,
+#dkFourFive,
+#dkFourSix,
+#dkFiveOne,
+#dkFiveTwo,
+#dkFiveThree,
+#dkFiveFour,
+#dkFiveFive,
+#dkFiveSix,
+#dkFiveSeven,
+#dkSixOne,
+#dkSixTwo,
+#dkSixThree,
+#dkSixFour,
+#dkSevenOne,
+#dkSevenTwo,
+#dkSevenThree,
+#dkSevenFour,
+#dkSevenFive,
+#dkSevenSix,
+#dkSevenSeven,
+#dkSevenEight,
+#dkSevenNine,
+.galleryHolder,
+.apiContainer,
+.apiBtn,
+.apis,
+.deckNum,
+.detailPanel,
+.discoverImg,
+#h5Btn,
+.closeGallery,
+#vikingRoom,
+#vikingBar,
+#theSpa,
+#theRestaurant,
+#theAtrium,
+#theater {
+    position: absolute;
+}
+* {
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    outline: 0;
+    color: #676768;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.activeBtnOne,
+.activeBtnTwo,
+.activeBtnThree {
+    background-color: #b10a32 !important;
+    color: white !important;
+}
+.apis {
+    background-color: #2b3d52;
+    bottom: 0px;
+    width: 100%;
+    padding: 21px 0;
+    z-index: 20;
+}
+.apiBtn {
+    color: #2b3d52;
+    background-color: #f5f5f5;
+    right: 17px;
+    text-align: center;
+    top: 10px;
+    cursor: pointer;
+    font-size: 11pt;
+    padding: 1px 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.apiContainer {
+    width: 100%;
+    height: 94%;
+    background-color: white;
+    top: 0%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid;
+    border-bottom: none;
+}
+button.learnMore {
+    background-color: #777777;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    font-size: 10pt;
+    letter-spacing: 0.5pt;
+    padding: 10px 0;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+}
+.btnsActive {
+    background-color: black;
+    width: 100%;
+    height: 85.5%;
+    top: 0;
+    opacity: 0.85;
+    z-index: 21;
+}
+.blue {
+    background-color: #2b3d52 !important;
+}
+.closeGallery {
+    cursor: pointer;
+    color: white;
+    background-color: #2b3d52;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0;
+    letter-spacing: 0.5pt;
+    text-transform: uppercase;
+    z-index: 1;
+    left: 20px;
+    top: 56px;
+}
+.collapse.navbar-collapse {
+    background-color: #2b3d52 !important;
+}
+.collapsing {
+    transition: height 0.6s;
+}
+.color {
+    background-color: red !important;
+    opacity: 0.7;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 676px;
+    margin: 10px auto 0 auto;
+    height: 660px;
+    overflow: hidden;
+}
+.controls {
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    font-size: 12pt;
+}
+.deckHolder {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    top: 310px;
+}
+.deckNum {
+    top: 15px;
+}
+.detailPanel {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 101%;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+    overflow: scroll;
+}
+#dkThreeOne {
+    top: 54px;
+    left: 89px;
+}
+#dkThreeTwo {
+    top: 54px;
+    left: 216px;
+}
+#dkThreeThree {
+    top: 54px;
+    left: 345px;
+}
+#dkThreeFour {
+    top: 54px;
+    left: 550px;
+}
+#dkThreeFive {
+    top: 54px;
+    left: 761px;
+}
+#dkThreeSix {
+    top: 54px;
+    left: 868px;
+}
+#dkFourOne {
+    top: 56px;
+    left: 855px;
+}
+#dkFourThree {
+    top: 56px;
+    left: 690px;
+}
+#dkFourFour {
+    top: 56px;
+    left: 490px;
+}
+#dkFourFive {
+    top: 56px;
+    left: 260px;
+}
+#dkFourSix {
+    top: 56px;
+    left: 130px;
+}
+#dkFiveOne {
+    top: 30px;
+    left: 75px;
+}
+#dkFiveTwo {
+    top: 97px;
+    left: 75px;
+}
+#dkFiveThree {
+    top: 65px;
+    left: 213px;
+}
+#dkFiveFour {
+    top: 65px;
+    left: 390px;
+}
+#dkFiveFive {
+    top: 65px;
+    left: 890px;
+}
+#dkFiveSix {
+    top: 65px;
+    left: 720px;
+}
+#dkFiveSeven {
+    top: 65px;
+    left: 550px;
+}
+#dkSixOne {
+    top: 74px;
+    left: 886px;
+}
+#dkSixTwo {
+    top: 74px;
+    left: 746px;
+}
+#dkSixThree {
+    top: 74px;
+    left: 516px;
+}
+#dkSixFour {
+    top: 74px;
+    left: 206px;
+}
+#dkSevenOne {
+    top: 71px;
+    left: 915px;
+}
+#dkSevenTwo {
+    top: 71px;
+    left: 846px;
+}
+#dkSevenThree {
+    top: 71px;
+    left: 726px;
+}
+#dkSevenFour {
+    top: 71px;
+    left: 635px;
+}
+#dkSevenFive {
+    top: 71px;
+    left: 542px;
+}
+#dkSevenSix {
+    top: 71px;
+    left: 75px;
+}
+#dkSevenSeven {
+    top: 71px;
+    left: 136px;
+}
+#dkSevenEight {
+    top: 71px;
+    left: 409px;
+}
+#dkSevenNine {
+    top: 71px;
+    left: 261px;
+}
+.deckOne,
+.deckTwo,
+.deckThree,
+.deckFour,
+.deckFive,
+.deckSix,
+.deckSeven,
+.deckEight,
+.deckNine,
+.deckA {
+    width: 1050px;
+    height: 50%;
+    min-width: 320px;
+    min-height: 110px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.discoverShip {
+    width: 1050px;
+    height: 68%;
+    min-width: 320px;
+    min-height: 110px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    image-rendering: -webkit-optimize-contrast;
+    background: transparent url(https://assets.codepen.io/1470716/loading.gif)
+        scroll no-repeat center bottom /90%;
+}
+.deckA,
+.deckOne,
+.deckTwo,
+.deckThree,
+.deckFour,
+.deckFive,
+.deckSix,
+.deckSeven,
+.deckEight,
+.deckNine {
+    background: transparent
+        url(https://assets.codepen.io/1470716/shipDecks.png);
+}
+.deckA {
+    height: 70%;
+    background-position: 0 169px;
+    top: 18px;
+    background-size: 100%;
+}
+.deckOne {
+    background-position: 20px 5px;
+    height: 71%;
+    top: 18px;
+    background-size: 100%;
+}
+.deckTwo {
+    background-position: 10px -158px;
+    height: 68%;
+    top: 22px;
+    background-size: 100%;
+}
+.deckThree {
+    background-position: 0 -340px;
+    height: 62%;
+    top: 24px;
+    background-size: 100%;
+}
+.deckFour {
+    background-position: 44px -534px;
+    height: 65%;
+    top: 14px;
+    background-size: 102%;
+    background-repeat: no-repeat;
+}
+.deckFive {
+    background-position: 27px -717px;
+    height: 75%;
+    top: 10px;
+    background-size: 104%;
+}
+.deckSix {
+    background-position: 50px -868px;
+    height: 83%;
+    top: 3px;
+    background-size: 100%;
+}
+.deckSeven {
+    background-position: 36px -1099px;
+    height: 84%;
+    top: 5px;
+    background-size: 103%;
+}
+.deckEight {
+    background-position: 20px -1281px;
+    height: 88%;
+    top: -3px;
+    background-size: 103%;
+}
+.deckNine {
+    background-position: 0 184px;
+    height: 75%;
+    top: 19px;
+    background-size: 105%;
+}
+.detailsBtn {
+    background-color: #b10a32 !important;
+}
+.directive {
+    width: 100%;
+    height: 96%;
+}
+.elemBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.elemText {
+    padding: 10px 0 0 10px;
+}
+.exploreHolder {
+    width: 180px;
+    height: 60px;
+    top: 62px;
+    right: 20px;
+    z-index: 1;
+    color: white;
+}
+.explore {
+    text-align: center;
+    font-size: 17px;
+    margin: -9px 0 0 0;
+}
+.fahrenheit {
+    font-size: 11pt;
+    margin: 0 0 0 1px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.galleryHolder {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid black;
+    height: 56%;
+    padding: 1% 0;
+    z-index: 2;
+}
+.gallery {
+    float: left;
+    padding-bottom: 12px;
+    width: 40%;
+    margin-left: 10%;
+}
+.galleryDesc {
+    height: 99%;
+    width: 39%;
+    float: right;
+    text-align: left;
+    margin-right: 10%;
+    padding: 0 0 0 1%;
+    line-height: 25px;
+}
+.greyDivider {
+    background-color: lightgray;
+    width: 90%;
+    margin: 0 auto 10px auto;
+    height: 3px;
+}
+html {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+}
+#h5Btn {
+    cursor: pointer;
+    color: white;
+    background-color: #2b3d52;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0;
+    letter-spacing: 0.5pt;
+    text-transform: uppercase;
+    z-index: 1;
+    left: 20px;
+    top: 56px;
+}
+html,
+body {
+    height: 98%;
+    width: 100%;
+}
+.homePgImg {
+    background: transparent url(https://assets.codepen.io/1470716/homePgImg.jpg) scroll no-repeat 0 0 /1680px;
+    width: 100%;
+    height: 100%;
+}
+hr {
+    background-color: #b8af80;
+    margin: 0;
+    height: 5px;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn {
+    display: table-cell;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin: 0px;
+    font-size: 10pt;
+    width: 300px;
+    padding: 5px 10px;
+}
+.input-group-addon {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+.input-group-addon,
+.input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn {
+    display: table-cell;
+}
+.interactiveSpace {
+    width: 452px;
+    height: 254px;
+    top: 27px;
+    right: 0;
+    border: 1px solid black;
+    left: 0;
+    margin: 0 auto;
+    background: transparent url(https://assets.codepen.io/1470716/8.jpg) scroll no-repeat 0 0 /100% 100%;
+}
+#items {
+    margin: -12px 0 0 0;
+    padding: 0;
+}
+#items ul {
+    padding: 0 0 0 0;
+    margin: 10px 0 0 15px;
+}
+.itineraries_Alt {
+    background-color: white;
+    top: 0%;
+    right: 0;
+    min-width: 285px;
+    height: 85.5%;
+    z-index: 100;
+    left: 0;
+    margin: 0 auto;
+}
+.itineraries_Alt {
+    width: 100%;
+    position: absolute;
+    overflow-x: scroll;
+}
+.itineraries_Alt hr {
+    margin: 0 0 10px 0;
+}
+.itineraries {
+    background-color: white;
+    top: 0;
+    right: 0;
+    min-width: 285px;
+    z-index: 100;
+    left: 0;
+    height: 85.5%;
+    width: 440px;
+    margin: 0 auto;
+}
+#itineraries,
+#stateroom {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.itineraries h5,
+.itineraries_Alt h5,
+.stateroom h5 {
+    margin: 10px 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1pt;
+    text-align: center;
+    color: #2b3d52;
+    width: 100%;
+}
+.itineraries h4 {
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0 6px 0;
+    width: 100%;
+}
+.itineraries .prev,
+.itineraries .next {
+    cursor: pointer;
+}
+.itineraries .prev,
+.stateroom .prev {
+    width: 40px;
+    height: 60px;
+    top: 39%;
+    left: 0;
+    background: transparent url(https://assets.codepen.io/1470716/arrow-left.png) scroll no-repeat center center/61%;
+    z-index: 1;
+}
+.itineraries .next, .stateroom .next {
+    width: 40px;
+    height: 60px;
+    top: 39%;
+    right: 0;
+    background: transparent url(https://assets.codepen.io/1470716/arrow-left.png) scroll no-repeat center center/61%;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+.input-group-addon {
+    background-color: transparent;
+    border: none;
+}
+.layoutBtns {
+    background-color: #b10a32;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    font-size: 9pt;
+    margin: 5px auto;
+    padding: 3px 10px;
+}
+.layoutToggle {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 6px;
+    margin: 0 auto;
+}
+.layoutContainer {
+    width: 430px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+.leftArrow {
+    bottom: 50%;
+    left: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+    transform: rotate(180deg);
+}
+.leftArrowSM {
+    bottom: 50%;
+    left: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.leftArrowSM a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.leftArrow a,
+.leftArrowSM a {
+    background: transparent
+        url(https://assets.codepen.io/1470716/arrow-left.png) scroll
+        no-repeat center center /50%;
+    transform: rotate(180deg);
+}
+#loading-bar .bar {
+    background: #b10a32;
+}
+#loading-bar,
+#loading-bar-spinner {
+    pointer-events: none;
+    -webkit-pointer-events: none;
+    -webkit-transition: 350ms linear all;
+    -moz-transition: 350ms linear all;
+    -o-transition: 350ms linear all;
+    transition: 350ms linear all;
+}
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+    opacity: 1;
+}
+#loading-bar .bar {
+    -webkit-transition: width 350ms;
+    -moz-transition: width 350ms;
+    -o-transition: width 350ms;
+    transition: width 350ms;
+    background: #b10a32;
+    position: fixed;
+    z-index: 10002;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+}
+#loading-bar .peg {
+    position: absolute;
+    width: 70px;
+    right: 0;
+    top: 0;
+    height: 2px;
+    opacity: 0.45;
+    -moz-box-shadow: #29d 1px 0 6px 1px;
+    -ms-box-shadow: #29d 1px 0 6px 1px;
+    -webkit-box-shadow: #29d 1px 0 6px 1px;
+    box-shadow: #29d 1px 0 6px 1px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+#loading-bar-spinner {
+    display: block;
+    position: fixed;
+    z-index: 10002;
+    top: 10px;
+    left: 10px;
+}
+#loading-bar-spinner .spinner-icon {
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #b10a32;
+    border-left-color: #b10a32;
+    border-radius: 50%;
+    -webkit-animation: loading-bar-spinner 400ms linear infinite;
+    -moz-animation: loading-bar-spinner 400ms linear infinite;
+    -ms-animation: loading-bar-spinner 400ms linear infinite;
+    -o-animation: loading-bar-spinner 400ms linear infinite;
+    animation: loading-bar-spinner 400ms linear infinite;
+}
+@-webkit-keyframes loading-bar-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes loading-bar-spinner {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes loading-bar-spinner {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-ms-keyframes loading-bar-spinner {
+    0% {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-bar-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#loading-bar-spinner .spinner-icon {
+    border-top-color: #b10a32;
+    border-left-color: #b10a32;
+}
+#loading-bar .peg {
+    -moz-box-shadow: #2c3e50 1px 0 6px 1px;
+    -ms-box-shadow: #2c3e50 1px 0 6px 1px;
+    -webkit-box-shadow: #2c3e50 1px 0 6px 1px;
+    box-shadow: #2c3e50 1px 0 6px 1px;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#mainImg {
+    width: 458px;
+    height: 250px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+#maps {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 62%;
+    border-left: 1px solid #2b3d52;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+}
+.mapsSearching {
+    background-image: url(https://assets.codepen.io/1470716/loading.gif);
+}
+#myContent {
+    width: 96%;
+    margin: 0 auto;
+}
+#myContent p {
+    font-size: 10pt;
+    margin: 0;
+    color: #676768;
+}
+#myContent article:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+}
+#myContent article:nth-child(2) {
+    float: left;
+    margin: 10px 2% 0 0;
+    min-width: 23%;
+}
+#myContent article:nth-child(3) {
+    float: right;
+    padding: 0px 15px 17px 0px;
+    text-align: center;
+    width: 20%;
+}
+.myImg {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 200px;
+    height: 110px;
+    float: right;
+    margin: 0 0 1px 10px;
+    overflow: hidden;
+}
+.myImg img {
+    width: 100%;
+}
+#myTable,
+.weatherTable {
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#myTable tbody tr {
+    color: #555;
+}
+#mytable tbody tr td {
+    text-align: left;
+    padding: 6px 7px;
+}
+#myTable thead tr {
+    cursor: pointer;
+    background: #dfe6ed;
+}
+#myTable thead tr th {
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 10px;
+}
+#myTable thead tr th span {
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+#myTable thead tr th.headerSortUp,
+#myTable thead tr th.headerSortDown {
+    background: #acc8dd;
+}
+#myTable tbody tr td.lalign {
+    text-align: left;
+}
+#myTable a {
+    text-decoration: underline;
+}
+[ng-cloak] {
+    display: none !important;
+}
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0;
+}
+.nav-tabs > li,
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    cursor: pointer;
+}
+.navTabs {
+    width: 75%;
+    margin: 20px auto;
+}
+.nav-tabs,
+.nav-pills {
+    text-align: center;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+.navbar-inverse .navbar-brand {
+    color: white !important;
+}
+p.destination {
+    text-align: center;
+    margin: 0 0 8px;
+    font-size: 12pt;
+    font-weight: 300;
+}
+.page {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.pageContent {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    border: 1px solid lightgray;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    height: 600px;
+}
+.pageContent > p {
+    margin: 13px 0 10px;
+}
+.pageContent h4,
+.pageContent h5 {
+    display: inline-block;
+    z-index: 1;
+}
+.panel-title {
+    cursor: pointer;
+    width: 100%;
+}
+.panel-title > a {
+    display: block;
+    padding: 7px 15px;
+}
+.panel-heading {
+    padding: 0 15px !important;
+}
+.rightArrow {
+    right: 1px;
+    bottom: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.rightArrowSM {
+    bottom: 50%;
+    right: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.rightArrowSM a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.rightArrow a,
+.leftArrow a {
+    display: block;
+    width: 50px;
+    height: 55px;
+}
+.rightArrow a,
+.rightArrowSM a {
+    background: transparent
+        url(https://assets.codepen.io/1470716/arrow-left.png) scroll
+        no-repeat center center /56%;
+        transform: rotate(180deg);
+        background-color: rgb(245,245,245);
+}
+.showOnPortraitView {
+    display: none;
+}
+#sortInput {
+    margin: 0 30% 0 30%;
+    width: 40%;
+}
+.sortTable {
+    margin-right: auto;
+    margin-left: auto;
+}
+.specs {
+    width: 94%;
+    margin: -4px auto 0 auto;
+    color: #333333;
+}
+.specs tr:first-child {
+    text-align: center;
+    font-size: 14pt;
+}
+.specs tr {
+    font-size: 7pt;
+    text-align: center;
+}
+.stateroom {
+    background-color: #ffffff;
+    top: 2%;
+    display: block !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    height: 81%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 97%;
+    padding: 0 0 20px 0;
+    z-index: 100;
+}
+.stateroom .tripPhoto {
+    height: auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+}
+.tabularData {
+    width: 100%;
+    font-size: 10pt;
+    color: #676768;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border-bottom-width: 2px;
+}
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border: 1px solid #ddd;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.table > caption + thead > tr:first-child > td,
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td,
+.table > thead:first-child > tr:first-child > th {
+    border-top: 0px none;
+}
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+    border-bottom-width: 2px;
+}
+.tab-content {
+    color: white;
+}
+.templateWrapper {
+    position: relative;
+    height: 96%;
+    width: 100%;
+    display: inline-block;
+}
+#theRestaurant {
+    width: 40px;
+    height: 40px;
+    left: 147px;
+    top: 67px;
+}
+#theAtrium {
+    width: 40px;
+    height: 40px;
+    left: 382px;
+    top: 67px;
+}
+#theater {
+    top: 67px;
+    opacity: 0.7;
+    left: 805px;
+}
+.thumbs {
+    width: 87px;
+    height: 50px;
+    margin: 11px 3px 0 0;
+    padding: 0;
+    border: 1px solid white;
+    cursor: pointer;
+    background: transparent url(https://assets.codepen.io/1470716/loading.gif)
+        scroll no-repeat center center / 100%;
+}
+.topTier {
+    right: 37px;
+    top: 26px;
+    display: block;
+}
+.topTier button:nth-child(1) {
+    margin: 0 10px 0 0;
+}
+.touchPointHolder {
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+.touchPointHolder span {
+    margin: 0 10px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+.tripPhoto img {
+    width: 80%;
+    margin: 12px auto 0 auto;
+    display: block;
+}
+.tripPhoto ul li {
+    text-align: left;
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+}
+#searchingCity {
+    position: absolute;
+    width: 100%;
+    font-size: 13pt;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    top: 33px;
+}
+#temp {
+    margin: 40px 0 10px 0;
+    font-size: 11pt;
+    text-align: left;
+    padding: 0 15px;
+    line-height: 25px;
+}
+.text {
+    position: absolute;
+    font-size: 14pt;
+    text-transform: capitalize;
+    left: 0;
+    right: 0;
+    margin: 35% auto;
+    text-align: center;
+}
+.textSearching {
+    margin: 20% auto !important;
+}
+#theSpa {
+    top: 32px;
+    left: 785px;
+}
+ul.details {
+    list-style-type: none;
+    text-align: left;
+    margin: 10px 0 0 0;
+    line-height: 25px;
+}
+#vikingBar {
+    top: 97px;
+    left: 444px;
+}
+#vikingRoom {
+    top: 32px;
+    left: 443px;
+}
+.weatherAPI .apiBtn {
+    position: static;
+    height: 30px;
+    border: 1px solid #2b3d52;
+    float: left;
+    margin: 0 0 0 10px;
+}
+.weatherAPI {
+    width: 38%;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #2b3d52;
+}
+.weatherAPI input {
+    text-align: center;
+    text-transform: capitalize;
+    height: 30px;
+    border: none;
+    float: left;
+    margin: 0 0 0 25px;
+    border: 1px solid #2b3d52;
+    width: 45%;
+}
+.white {
+    color: white;
+}
+.whiteBG {
+    background-color: #ffffff !important;
+}
+#wintergarden {
+    width: 42px;
+    height: 8px;
+    top: 70px;
+    right: 468px;
+}
+.wrapper {
+    position: absolute;
+    border: 1px solid black;
+    width: 410px;
+    height: 215px;
+    background-color: #2b3d52;
+    color: white;
+    bottom: 50px;
+    right: 20px;
+}
+/* ********************************
+           MEDIA QUERIE
+******************************** */
+@media only screen and (max-width: 1200px) {
+    #dkThreeOne {
+        top: 46px;
+        left: 36px;
+    }
+    #dkThreeTwo {
+        top: 46px;
+        left: 96px;
+    }
+    #dkThreeThree {
+        top: 46px;
+        left: 186px;
+    }
+    #dkThreeFour {
+        top: 46px;
+        left: 294px;
+    }
+    #dkThreeFive {
+        top: 46px;
+        left: 481px;
+    }
+    #dkThreeSix {
+        top: 46px;
+        left: 658px;
+    }
+    #dkFourOne {
+        top: 56px;
+        left: 590px;
+    }
+    #dkFourThree {
+        top: 56px;
+        left: 720px;
+    }
+    #dkFourFour {
+        top: 56px;
+        left: 490px;
+    }
+    #dkFourFive {
+        top: 56px;
+        left: 260px;
+    }
+    #dkFourSix {
+        top: 56px;
+        left: 70px;
+    }
+    #dkFiveOne {
+        top: 19px;
+        left: 75px;
+    }
+    #dkFiveTwo {
+        top: 89px;
+        left: 75px;
+    }
+    #dkFiveThree {
+        top: 54px;
+        left: 213px;
+    }
+    #dkFiveFour {
+        top: 54px;
+        left: 992px;
+    }
+    #dkFiveFive {
+        top: 54px;
+        left: 730px;
+    }
+    #dkFiveSix {
+        top: 54px;
+        left: 633px;
+    }
+    #dkFiveSeven {
+        top: 54px;
+        left: 430px;
+    }
+    #dkSixOne {
+        top: 64px;
+        left: 96px;
+    }
+    #dkSixTwo {
+        top: 64px;
+        left: 746px;
+    }
+    #dkSixThree {
+        top: 64px;
+        left: 516px;
+    }
+    #dkSixFour {
+        top: 64px;
+        left: 206px;
+    }
+    #dkSevenOne {
+        top: 65px;
+        left: 75px;
+    }
+    #dkSevenTwo {
+        top: 65px;
+        left: 145px;
+    }
+    #dkSevenThree {
+        top: 65px;
+        left: 333px;
+    }
+    #dkSevenFour {
+        top: 65px;
+        left: 545px;
+    }
+    #dkSevenFive {
+        top: 65px;
+        left: 462px;
+    }
+    #dkSevenSix {
+        top: 65px;
+        left: 666px;
+    }
+    #dkSevenSeven {
+        top: 65px;
+        left: 806px;
+    }
+    #dkSevenEight {
+        top: 65px;
+        left: 609px;
+    }
+    #dkSevenNine {
+        top: 65px;
+        left: 220px;
+    }
+    #maps {
+        width: 100%;
+        height: 65%;
+        top: 37%;
+        border: none;
+        border-top: 1px solid #2b3d52;
+    }
+    .layoutBtns {
+        padding: 3px 10px;
+    }
+    .weatherAPI {
+        width: 70%;
+        border: none;
+        margin: 0 auto;
+    }
+    .textSearching {
+        margin: 10% auto !important;
+    }
+    .text {
+        position: absolute;
+        font-size: 14pt;
+        text-transform: capitalize;
+        left: 0;
+        right: 0;
+        margin: 20% auto;
+        text-align: center;
+    }
+    .discoverShip,
+    .deckOne,
+    .deckTwo,
+    .deckThree,
+    .deckFour,
+    .deckFive,
+    .deckSix,
+    .deckSeven,
+    .deckEight,
+    .deckNine,
+    .deckA {
+        width: 905px;
+        top: 50px;
+    }
+    .deckA {
+        background-position: 0 145px;
+        height: 61%;
+        top: 29px;
+    }
+    .deckOne {
+        background-position: 15px 0;
+        height: 58%;
+        top: 31px;
+    }
+    .deckTwo {
+        background-position: 10px -143px;
+        height: 57%;
+        top: 31px;
+    }
+    .deckThree {
+        background-position: -7px 1098px;
+        height: 57%;
+        top: 34px;
+    }
+    .deckFour {
+        background-position: 33px -447px;
+        height: 63%;
+        top: 26px;
+    }
+    .deckFive {
+        background-position: 20px -616px;
+        height: 63%;
+        top: 23px;
+    }
+    .deckSix {
+        background-position: 48px -745px;
+        height: 74%;
+        top: 37px;
+    }
+    .deckSeven {
+        background-position: 35px -932px;
+        height: 75%;
+        top: 12px;
+    }
+    .deckEight {
+        background-position: 10px 323px;
+        height: 78%;
+        top: 9px;
+    }
+    .deckNine {
+        background-position: 0 163px;
+        height: 69%;
+        top: 7px;
+    }
+    #vikingRoom {
+        top: 14px;
+        left: 383px;
+    }
+    #theSpa {
+        top: 50px;
+        left: 680px;
+    }
+    #vikingBar {
+        left: 383px;
+        width: 40px;
+        top: 80px;
+    }
+    #theRestaurant {
+        left: 122px;
+        top: 47px;
+    }
+    #theater {
+        top: 47px;
+        left: 740px;
+    }
+    #theAtrium {
+        left: 397px;
+        top: 47px;
+    }
+    .gallery {
+        float: left;
+        padding-bottom: 12px;
+        width: 50%;
+        margin-left: 11%;
+    }
+    .galleryDesc {
+        height: 99%;
+        width: 32%;
+        float: left;
+        text-align: left;
+        margin-right: 0;
+        padding: 0;
+        overflow: scroll;
+    }
+}
+
+/* ********************************
+           MEDIA QUERIE
+******************************** */
+@media only screen and (max-width: 992px) {
+    #dkThreeOne,
+    #dkThreeTwo,
+    #dkThreeThree,
+    #dkThreeFour,
+    #dkThreeFive,
+    #dkThreeSix,
+    #dkFourOne,
+    #dkFourThree,
+    #dkFourFour,
+    #dkFourFive,
+    #dkFourSix,
+    #dkFiveOne,
+    #dkFiveTwo,
+    #dkFiveThree,
+    #dkFiveFour,
+    #dkFiveFive,
+    #dkFiveSix,
+    #dkFiveSeven,
+    #dkSixOne,
+    #dkSixTwo,
+    #dkSixThree,
+    #dkSixFour,
+    #dkSevenOne,
+    #dkSevenTwo,
+    #dkSevenThree,
+    #dkSevenFour,
+    #dkSevenFive,
+    #dkSevenSix,
+    #dkSevenSeven,
+    #dkSevenEight,
+    #dkSevenNine,
+    #vikingBar,
+    #theSpa,
+    #vikingRoom {
+        border-radius: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    #dkThreeOne {
+        top: 39px;
+        left: 19px;
+    }
+    #dkThreeTwo {
+        top: 39px;
+        left: 77px;
+    }
+    #dkThreeThree {
+        top: 39px;
+        left: 156px;
+    }
+    #dkThreeFour {
+        top: 39px;
+        left: 288px;
+    }
+    #dkThreeFive {
+        top: 39px;
+        left: 441px;
+    }
+    #dkThreeSix {
+        top: 39px;
+        left: 530px;
+    }
+    #dkFourOne {
+        top: 48px;
+        left: 64px;
+    }
+    #dkFourThree {
+        top: 48px;
+        left: 180px;
+    }
+    #dkFourFour {
+        top: 48px;
+        left: 263px;
+    }
+    #dkFourFive {
+        top: 48px;
+        left: 553px;
+    }
+    #dkFourSix {
+        top: 48px;
+        left: 614px;
+    }
+    #dkFiveOne {
+        top: 16px;
+        left: 75px;
+    }
+    #dkFiveTwo {
+        top: 74px;
+        left: 73px;
+    }
+    #dkFiveThree {
+        top: 45px;
+        left: 150px;
+    }
+    #dkFiveFour {
+        top: 45px;
+        left: 273px;
+    }
+    #dkFiveFive {
+        top: 45px;
+        left: 402px;
+    }
+    #dkFiveSix {
+        top: 45px;
+        left: 530px;
+    }
+    #dkFiveSeven {
+        top: 45px;
+        left: 650px;
+    }
+    #dkSixOne {
+        top: 53px;
+        left: 31px;
+    }
+    #dkSixTwo {
+        top: 53px;
+        left: 126px;
+    }
+    #dkSixThree {
+        top: 53px;
+        left: 346px;
+    }
+    #dkSixFour {
+        top: 53px;
+        left: 576px;
+    }
+    #dkSevenOne {
+        top: 55px;
+        left: 60px;
+    }
+    #dkSevenTwo {
+        top: 55px;
+        left: 93px;
+    }
+    #dkSevenThree {
+        top: 55px;
+        left: 169px;
+    }
+    #dkSevenFour {
+        top: 55px;
+        left: 258px;
+    }
+    #dkSevenFive {
+        top: 55px;
+        left: 362px;
+    }
+    #dkSevenSix {
+        top: 55px;
+        left: 429px;
+    }
+    #dkSevenSeven {
+        top: 55px;
+        left: 526px;
+    }
+    #dkSevenEight {
+        top: 55px;
+        left: 589px;
+    }
+    #dkSevenNine {
+        top: 55px;
+        left: 311px;
+    }
+    .detailPanel {
+        width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .deckOne,
+    .deckTwo,
+    .deckThree,
+    .deckFour,
+    .deckFive,
+    .deckSix,
+    .deckSeven,
+    .deckEight,
+    .deckNine,
+    .deckA {
+        width: 704px;
+    }
+    .discoverShip {
+        width: 90%;
+    }
+    .deckA {
+        height: 100%;
+        height: 49%;
+        background-position: 0 110px;
+    }
+    #theater {
+        top: 39px;
+        width: 25px;
+        height: 25px;
+        left: 570px;
+    }
+    .deckOne {
+        background-position: 0 0;
+        height: 48%;
+    }
+    .deckTwo {
+        background-position: 0 970px;
+        height: 47%;
+    }
+    .deckThree {
+        background-position: -11px -223px;
+        height: 45%;
+    }
+    .deckFour {
+        background-position: 28px -346px;
+        height: 53%;
+        top: 37px;
+    }
+    .deckFive {
+        background-position: 36px -480px;
+        height: 50%;
+        top: 40px;
+    }
+    .deckSix {
+        background-position: 0 -579px;
+        height: 58%;
+        top: 32px;
+    }
+    .deckSeven {
+        background-position: 30px -730px;
+        height: 59%;
+        top: 30px;
+    }
+    .deckEight {
+        background-position: 0 -854px;
+        height: 63%;
+        top: 26px;
+    }
+    .deckNine {
+        background-position: 0px 130px;
+        height: 56%;
+        top: 24px;
+    }
+    .interactiveSpace {
+        width: 472px;
+        height: 265px;
+    }
+    .tripPhoto img {
+        width: 80%;
+        margin: 12px auto 0 auto;
+        display: block;
+    }
+    .touchPointHolder span {
+        margin: 0 5px;
+        font-size: 10pt;
+        cursor: pointer;
+    }
+    #vikingBar {
+        top: 61px;
+        left: 300px;
+    }
+    #theSpa {
+        top: 41px;
+        left: 560px;
+    }
+    #vikingRoom {
+        top: 18px;
+        left: 300px;
+    }
+    #theRestaurant {
+        top: 39px;
+        left: 98px;
+        height: 25px;
+        width: 25px;
+    }
+    #theAtrium {
+        top: 39px;
+        left: 280px;
+        height: 25px;
+        width: 25px;
+    }
+    #theatre {
+        top: 62px;
+        height: 70px;
+        width: 90px;
+        left: 563px;
+    }
+    .galleryDesc {
+        width: 45%;
+    }
+    .gallery {
+        width: 50%;
+        margin: 8px 0 0 0;
+    }
+    #mainImg {
+        width: 65%;
+        height: auto;
+        border: 1px solid black;
+    }
+    .closeGallery {
+        left: 89%;
+        top: 279px;
+    }
+    .thumbs {
+        width: 16%;
+        height: auto;
+        margin: 11px 3px 0 0;
+        padding: 0;
+    }
+    .navTabs {
+        width: 75%;
+        margin: 110px auto;
+    }
+}
+/*            MEDIA QUERIE
+******************************** */
+@media (max-width: 768px) {
+    .showOnPortraitView {
+        display: block;
+        background: #000000 url(https://assets.codepen.io/1470716/rotateDevice.gif)
+            scroll no-repeat 0 50% /100% auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1000;
+        image-rendering: crisp-edges;
+    }
+    .notice {
+        font-size: 20pt;
+        color: white;
+        text-align: center;
+        padding: 40px 0 0 0;
+        display: block;
+        margin: 0 auto;
+    }
+}

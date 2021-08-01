@@ -1,0 +1,113 @@
+<div class="pageContent">
+    <gallery ng-show="gallery"></gallery>
+    <div class="deckHolder">
+        <div class="deckFour">
+            <div id="dkFourOne" ng-click="myFunction($event)" data="0"></div>
+            <div id="dkFourThree" ng-click="myFunction($event)" data="2"></div>
+            <div id="dkFourFour" ng-click="myFunction($event)" data="3"></div>
+            <div id="dkFourFive" ng-click="myFunction($event)" data="4"></div>
+            <div id="dkFourSix" ng-click="myFunction($event)" data="5"></div>
+         </div>
+    </div>
+    <div ng-show="details" class="detailPanel">
+        <div class="navTabs">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                FEATURES
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div id="items"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                                ES1
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {{ galleryContent[0] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                                ES2
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {{ galleryContent[1] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
+                                PV3
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {{ galleryContent[2] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse5">
+                                DV1
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {{ galleryContent[3] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse6">
+                                DV5
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            {{ galleryContent[4] }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="deckNum" ng-class="{'white' : details}">{{ deckNum }}</h4>
+    <p id="h5Btn" ng-class="{' white detailsBtn ' : details}" ng-click="detailsToggle(); features()" ng-bind="divText">Details</p>
+    <div class="interactiveSpace"></div>
+    <div class="touchPointHolder" ng-click="features()">
+        <span data="2" ng-click="captureClick($event)">ES1</span>
+        <span data="3" ng-click="captureClick($event)">ES2</span>
+        <span data="4" ng-click="captureClick($event)">PV3</span>
+        <span data="5" ng-click="captureClick($event)">DV1</span>
+        <span data="6" ng-click="captureClick($event)">DV4</span>
+        <span data="7" ng-click="captureClick($event)">DV5</span>
+    </div>
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0" />
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.min.js"></script>
+    <script src="app/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body ng-app="vikingApp" ng-controller="mainController">
+    <div class="container">
+        <nav class="navbar navbar-inverse" ng-hide="apis">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <a id="discover" class="navbar-brand" href="#/" ng-click="hideOthers()">Discover</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul id="appNav" class="nav navbar-nav navbar-left" ng-click="hideOthers()">
+                        <li><a href="#deckA">A</a></li>
+                        <li><a href="#deck1">1</a></li>
+                        <li><a href="#deck2">2</a></li>
+                        <li><a href="#deck3">3</a></li>
+                        <li><a href="#deck4">4</a></li>
+                        <li><a href="#deck5">5</a></li>
+                        <li><a href="#deck6">6</a></li>
+                        <li><a href="#deck7">7</a></li>
+                        <li><a href="#deck8">8</a></li>
+                        <li><a href="#deck9">9</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li id="itineraries" ng-click="showBtnOne()" ng-class="{'activeBtnOne' : oneActive}"><a>Itineraries</a></li>
+                        <li id="stateroom" ng-click="showBtnTwo(btnTwo)" ng-class="{'activeBtnTwo' : twoActive}"><a>Stateroom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="main">
+            <!-- PAGE CONTENT: SlideRight if direction is true, slideLeft if false -->
+            <div ng-view class="page" ng-class="{ 'slideRight': direction, 'slideLeft': !direction }"></div>
+            <!-- PASS DIRECTION VAR TO FUNC IN SCRIPT.JS -->
+            <div class="leftArrow"><a ng-click="goBack(direction)"></a></div>
+            <div class="rightArrow"><a ng-click="goNext(direction)"></a></div>
+            <!-- OVERLAY -->
+            <div ng-show="btnOne || btnTwo || apis" class="btnsActive"></div>
+            <!-- ITINERARIES -->
+            <div ng-show="btnOne && slider" class="itineraries" ng-class="{'itinerariesTrue' : oneActive}">
+                <h5>Itineraries This Ship Sails</h5>
+                <div class="layoutContainer">
+                    <button data="grid" class="layoutBtns layoutToggle" ng-click="getElem($event)">grid layout</button>
+                </div>
+                <hr>
+                <div class="prev" ng-click="prevTrip()"></div>
+                <div class="next" ng-click="nextTrip()"></div>
+                <itineraries class="directive"></itineraries>
+            </div>
+            <!-- ITINERARIES TABLE GRID -->
+            <div ng-show="btnOne && grid" class="itineraries_Alt" ng-class="{'itinerariesTrue' : oneActive}">
+                <h5>Itineraries This Ship Sails</h5>
+                <div class="layoutContainer">
+                    <button data="slider" class="layoutBtns layoutToggle" ng-click="getElem($event)">slider</button>
+                </div>
+                <hr>
+                <grid-view class="directive"></grid-view>
+            </div>
+            <!-- STATEROOMS -->
+            <div ng-include src="'pages/staterooms.html'"></div>
+        </div>
+        <footer>
+            <!-- APIs -->
+            <div class="apis">
+                <div data="apis" class="apiBtn" ng-click="getElem($event)" ng-class="{'activeBtnThree' : apis}">{{ apiText }}</div>
+            </div>
+            <div class="apiContainer" ng-show="apis">
+                <!-- WEATHER -->
+                <div class="weatherAPI">
+                    <input id="searchWeather" ng-model="cityName" ng-change="userSearching()" type="text" placeholder="Enter City Destination">
+                    <button type="button" ng-click="getForecast()" class="apiBtn">Get Forecast</button>
+                    <button type="button" ng-click="clear()" class="apiBtn">Clear</button>
+                    <div id="temp" ng-show="results"></div>
+                </div>
+                <div id="maps" ng-class="{'mapsSearching' : textSearching}">
+                    <div class="text" ng-class="{'textSearching' : textSearching}">
+                        <span id="updateText">{{ changeInput }}</span>
+                        <span id="searchingCity">{{ cityName }}</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- DO NOT DISPLAY ROTATE PHONE GIF WHEN ITINERARIES OR STATEROOMS ARE ACTIVE -->
+    <div class="showOnPortraitView">
+        <span class="notice">Please Use a Larger<br>Device or Desktop.</span>
+    </div>
+    <div id="error-message">
+    Console errors are native to Codepen. These are not errors related to this app.
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.min.js"></script>
+    <script src="app/script.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/controllers.js"></script>
+    <script src="app/directive.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPTyDI9wkaQJ3vHzulg5e8zi0I8NAd98I"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.1/js/bootstrap.min.js"></script>
+        <script>
+        // HIDE MOBILE MENU ON LINK CLICK
+        $(document).on("click", ".navbar-collapse.in", function(e) {
+            if ($(e.target).is("a")) {
+                $(this).collapse("hide");
+            }
+        });
+    </script>
+</body>
+</html>

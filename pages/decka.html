@@ -1,0 +1,52 @@
+<div class="pageContent">
+    <gallery ng-show="gallery"></gallery>
+    <div class="deckHolder">
+        <div class="deckA"></div>
+        <div id="medicalCenter" ng-click="myFunction($event)" data="0"></div>
+    </div>
+    <div ng-show="details" class="detailPanel">
+        <div class="navTabs">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title"><a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                            FEATURES
+                            </a>
+                            </p>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div id="items"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2" data="2">
+                                Medical Center
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" data="2">
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="deckNum" ng-class="{'white' : details}">
+        {{ deckNum }}
+    </h4>
+    <p id="h5Btn" ng-class="{' white detailsBtn ' : details}" ng-click="detailsToggle(); features()" ng-bind="divText">
+        Details
+    </p>
+    <div class="interactiveSpace"></div>
+    <div class="touchPointHolder" ng-click="features()">
+        <span data="2" ng-click="captureClick($event)">
+            Medical Center
+        </span>
+    </div>
+</div>

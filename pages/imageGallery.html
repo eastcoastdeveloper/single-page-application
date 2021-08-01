@@ -1,0 +1,19 @@
+<div class="galleryHolder">
+    <div class="closeGallery" ng-click="closeGallery()">
+        CLOSE
+    </div>
+    <div class="gallery">
+        <!-- galleryPics: Service Object. ID: clicked element. 0: Array position -->
+        <img ng-src="{{ galleryPics[ID][0] }}" id="mainImg" />
+        <!-- FUNCTION FROM IMG GALLERY TEMPLATE DIRECTIVE -->
+        <div id="myThumbs" ng-click="changeImg($event)">
+            <img ng-src="{{ galleryPics[ID][0] }}" class="thumbs" />
+            <img ng-src="{{ galleryPics[ID][1] }}" class="thumbs" />
+            <img ng-src="{{ galleryPics[ID][2] }}" class="thumbs" />
+            <img ng-src="{{ galleryPics[ID][3] }}" class="thumbs" />
+            <img ng-src="{{ galleryPics[ID][4] }}" class="thumbs" />
+        </div>
+    </div>
+    <!-- array position of text from controller -->
+    <div class="galleryDesc">{{ galleryContent[myElem] }}</div>
+</div>

@@ -1,0 +1,52 @@
+<div class="pageContent">
+    <gallery ng-show="gallery"></gallery>
+    <div class="deckHolder">
+        <div class="deckNine"></div>
+    </div>
+    <div ng-show="details" class="detailPanel">
+        <div class="navTabs">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                FEATURES
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div id="items"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2" data="2">
+                                Fitness Center
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" data="2">
+                        <div class="panel-body">
+                            {{ galleryContent[0] }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="deckNum" ng-class="{'white' : details}">
+        {{ deckNum }}
+    </h4>
+    <p id="h5Btn" ng-class="{' white detailsBtn ' : details}" ng-click="detailsToggle(); features()" ng-bind="divText">
+        Details
+    </p>
+    <div class="interactiveSpace"></div>
+    <div class="touchPointHolder" ng-click="features()">
+        <span data="2" ng-click="captureClick($event)">
+            Fitness Center
+        </span>
+    </div>
+</div>

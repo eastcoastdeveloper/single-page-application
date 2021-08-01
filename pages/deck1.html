@@ -1,0 +1,78 @@
+<div class="pageContent">
+    <gallery ng-show="gallery"></gallery>
+    <div class="deckHolder">
+        <div class="deckOne">
+            <div id="vikingRoom" ng-click="myFunction($event)" data="0"></div>
+            <div id="theSpa" ng-click="myFunction($event)" data="1"></div>
+            <div id="vikingBar" ng-click="myFunction($event)" data="2"></div>
+        </div>
+    </div>
+    <div ng-show="details" class="detailPanel">
+        <div class="navTabs">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                FEATURES
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div id="items"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2" data="2">
+                                The Viking Living Room
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" data="2">
+                        <div class="panel-body">
+                            {{ galleryContent[0] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse3" data="3">
+                                The Spa
+                            </a>
+                        </p>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" data="3">
+                        <div class="panel-body">
+                            {{ galleryContent[1] }}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <p class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse4" data="4">Viking Bar</a>
+                        </p>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse" data="4">
+                        <div class="panel-body">
+                            {{ galleryContent[2] }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="deckNum" ng-class="{'white' : details}">{{ deckNum }}</h4>
+    <p id="h5Btn" ng-class="{' white detailsBtn ' : details}" ng-click="detailsToggle(); features()" ng-bind="divText">Details</p>
+    <div class="interactiveSpace"></div>
+    <div class="touchPointHolder" ng-click="features()">
+        <span data="2" ng-click="captureClick($event)">The Viking Living Room</span>
+        <span data="3" ng-click="captureClick($event)">The Spa</span>
+        <span data="4" ng-click="captureClick($event)">Viking Bar</span>
+    </div>
+</div>

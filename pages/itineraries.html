@@ -1,0 +1,29 @@
+<div class="templateWrapper">
+    <div class="goldBar" </div>
+        <div class="tripPhoto">
+            <img src="{{ trips[value].img }}" />
+        </div>
+        <h4>
+            {{ trips[value].headline }}
+        </h4>
+        <p class="destination">
+            {{ trips[value].destination }}
+        </p>
+        <hr class="greyDivider">
+    </div>
+    <table class="specs">
+        <tr>
+            <td>{{ trips[value].days }}</td>
+            <td>{{ trips[value].guidedTours }}</td>
+            <td>{{ trips[value].countries }}</td>
+            <td>{{ trips[value].from }}</td>
+        </tr>
+        <tr>
+            <td>DAYS</td>
+            <td>GUIDED TOURS</td>
+            <td>COUNTRIES</td>
+            <td>FROM</td>
+        </tr>
+    </table>
+    <button class="learnMore">LEARN MORE</button>
+</div>
